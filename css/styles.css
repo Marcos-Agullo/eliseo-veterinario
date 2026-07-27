@@ -399,3 +399,29 @@ h1, h2, h3 { font-family: var(--font-titulos); line-height: 1.25; }
   .ventajas__grid, .domicilio__grid, .servicios__grid, .galeria__grid { grid-template-columns: 1fr; }
   .contacto__acciones { flex-direction: row; flex-wrap: wrap; }
 }
+
+/* ===== TELÉFONO VISIBLE EN CABECERA ===== */
+.header__phone {
+  font-weight: 700;
+  color: var(--color-azul-vet);
+  white-space: nowrap;
+  transition: color var(--transition);
+}
+.header__phone:hover { color: var(--color-turquesa-dark); }
+
+@media (max-width: 700px) {
+  .header__phone { font-size: 0.85rem; }
+}
+
+/* ===== TELÉFONO VISIBLE EN EL HERO ===== */
+.hero__phone {
+  font-weight: 700;
+  color: var(--color-azul-vet);
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+}
+.hero__phone a {
+  text-decoration: underline;
+  transition: color var(--transition);
+}
+.hero__phone a:hover { color: var(--color-turquesa-dark); }
