@@ -11,10 +11,16 @@
 </head>
 <body>
 
+
 <!-- ===== CABECERA ===== -->
 <header class="header" id="header">
   <div class="container header__inner">
     <a href="#inicio" class="logo">Eliseo <span>Veterinario</span></a>
+
+    <!-- Teléfono visible en cabecera: cámbialo aquí -->
+    <a href="tel:+34619130515" class="header__phone" aria-label="Llamar a Eliseo Veterinario">
+      📞 619 13 05 15
+    </a>
 
     <nav class="nav" id="nav">
       <ul class="nav__list">
@@ -26,11 +32,13 @@
       </ul>
     </nav>
 
+
     <!-- Botón WhatsApp destacado en cabecera: cambia el número y el texto aquí -->
     <a href="https://wa.me/34619130515?text=Hola%20Eliseo%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20atenci%C3%B3n%20veterinaria%20a%20domicilio"
        class="btn btn--whatsapp header__cta" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
       Contactar por WhatsApp
     </a>
+
 
     <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
       <span></span><span></span><span></span>
@@ -38,16 +46,22 @@
   </div>
 </header>
 
+
 <main>
+
 
   <!-- ===== HERO ===== -->
   <section class="hero" id="inicio">
     <div class="container hero__inner">
       <div class="hero__text reveal">
-        <p class="hero__badge">🐾 Servicio veterinario a domicilio</p>
+        <p class="hero__badge">🐾 Servicio veterinario a domicilio en Mutxamel, Alicante y alrededores</p>
         <!-- Cambia el titular y subtítulo principal aquí -->
         <h1>Atención veterinaria de confianza, directamente en tu hogar</h1>
-        <p class="hero__subtitle">Más de 30 años cuidando de la salud de tus mascotas con consultas y servicios veterinarios a domicilio en Mutxamel y Alicante.</p>
+        <p class="hero__subtitle">Más de 30 años cuidando de la salud de tus mascotas con consultas y servicios veterinarios a domicilio en Mutxamel, Alicante y alrededores.</p>
+        <!-- Teléfono destacado en el inicio: cámbialo aquí -->
+        <p class="hero__phone">
+          📞 <a href="tel:+34619130515">619 13 05 15</a> — Mutxamel, Alicante y alrededores
+        </p>
         <div class="hero__actions">
           <a href="https://wa.me/34619130515?text=Hola%20Eliseo%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20atenci%C3%B3n%20veterinaria%20a%20domicilio"
              class="btn btn--whatsapp" target="_blank" rel="noopener">Escribir por WhatsApp</a>
@@ -61,6 +75,7 @@
       </div>
     </div>
   </section>
+
 
   <!-- ===== VENTAJAS ===== -->
   <section class="ventajas">
@@ -90,11 +105,13 @@
     </div>
   </section>
 
+
   <!-- ===== SERVICIOS ===== -->
   <section class="servicios" id="servicios">
     <div class="container">
       <h2 class="section-title reveal">Servicios veterinarios a domicilio</h2>
       <p class="section-subtitle reveal">Cuidados esenciales para tu mascota, en la comodidad de tu hogar.</p>
+
 
       <div class="servicios__grid">
         <article class="service-card reveal">
@@ -127,13 +144,21 @@
           <h3>Revisiones y seguimiento</h3>
           <p>Controles periódicos para hacer seguimiento de la evolución de tu mascota.</p>
         </article>
+        <!-- Nuevo servicio: eutanasia a domicilio con incineración -->
+        <article class="service-card reveal">
+          <span class="service-card__icon" aria-hidden="true">🕊️</span>
+          <h3>Eutanasia a domicilio</h3>
+          <p>Servicio de eutanasia a domicilio con servicio de incineración, realizado con el máximo respeto y acompañamiento a la familia.</p>
+        </article>
       </div>
+
 
       <div class="servicios__nota reveal">
         <p>¿Necesitas otro servicio veterinario a domicilio? <a href="#contacto">Consúltanos sin compromiso</a>.</p>
       </div>
     </div>
   </section>
+
 
   <!-- ===== SOBRE MÍ ===== -->
   <section class="sobre-mi" id="sobre-mi">
@@ -150,6 +175,7 @@
       </div>
     </div>
   </section>
+
 
   <!-- ===== ¿POR QUÉ A DOMICILIO? ===== -->
   <section class="domicilio">
@@ -180,6 +206,7 @@
     </div>
   </section>
 
+
   <!-- ===== ZONA DE ATENCIÓN ===== -->
   <section class="zona" id="zona">
     <div class="container zona__inner">
@@ -203,11 +230,13 @@
     </div>
   </section>
 
+
   <!-- ===== GALERÍA ===== -->
   <section class="galeria">
     <div class="container">
       <h2 class="section-title reveal">Galería</h2>
       <p class="section-subtitle reveal"></p>
+
 
       <div class="galeria__grid" id="galeria-grid">
         <!-- Sustituye cada imagen por tus propias fotos, mantén los alt descriptivos -->
@@ -221,11 +250,13 @@
     </div>
   </section>
 
+
   <!-- Lightbox / modal de galería -->
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
     <button class="lightbox__close" id="lightbox-close" aria-label="Cerrar imagen">✕</button>
     <img src="" alt="" id="lightbox-img">
   </div>
+
 
   <!-- ===== CONTACTO ===== -->
   <section class="contacto" id="contacto">
@@ -233,12 +264,14 @@
       <h2 class="section-title reveal">Contacta con Eliseo</h2>
       <p class="section-subtitle reveal">Escríbenos por WhatsApp o llama directamente, estaremos encantados de ayudarte.</p>
 
+
       <div class="contacto__grid">
         <div class="contacto__acciones reveal">
           <a href="https://wa.me/34619130515?text=Hola%20Eliseo%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20atenci%C3%B3n%20veterinaria%20a%20domicilio"
              class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener">💬 Escribir por WhatsApp</a>
           <a href="tel:+34619130515" class="btn btn--outline btn--lg">📞 Llamar: 619 13 05 15</a>
         </div>
+
 
         <!-- Formulario visual sin backend: no envía datos reales -->
         <form class="contacto__form reveal" id="contact-form" novalidate>
@@ -265,7 +298,9 @@
     </div>
   </section>
 
+
 </main>
+
 
 <!-- ===== PIE DE PÁGINA ===== -->
 <footer class="footer">
@@ -286,11 +321,13 @@
   <p class="footer__copy">© <span id="year"></span> Eliseo Veterinario. Todos los derechos reservados.</p>
 </footer>
 
+
 <!-- ===== BOTÓN FLOTANTE WHATSAPP ===== -->
 <a href="https://wa.me/34619130515?text=Hola%20Eliseo%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20atenci%C3%B3n%20veterinaria%20a%20domicilio"
    class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
   💬
 </a>
+
 
 <script src="js/main.js"></script>
 </body>
