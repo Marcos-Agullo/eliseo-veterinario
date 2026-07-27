@@ -1398,3 +1398,18 @@ h3 {
     font-size: 1.08rem;
   }
 }
+
+@media (max-width: 760px) {
+  .ventajas__grid,
+  .domicilio__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    padding: 16px 12px;
+  }
+
+  .card p {
+    font-size: 0.88rem;
+  }
+}
