@@ -1,334 +1,556 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eliseo Veterinario | Atención veterinaria a domicilio en Mutxamel y Alicante</title>
-<meta name="description" content="Veterinario a domicilio con más de 30 años de experiencia. Consultas, vacunación, microchips, desparasitaciones y análisis en Mutxamel, Alicante y alrededores.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Eliseo Veterinario | Veterinario a domicilio en Mutxamel, Alicante y alrededores</title>
+  <meta name="description" content="Veterinario a domicilio con más de 30 años de experiencia en Mutxamel, Alicante y alrededores. Consultas, vacunas, microchips, desparasitaciones, análisis y eutanasia a domicilio con servicio de incineración.">
+
+  <!-- Sustituye tudominio.es por el dominio definitivo cuando publiques la web -->
+  <link rel="canonical" href="https://tudominio.es/">
+
+  <!-- Imagen y texto al compartir la web por WhatsApp, Facebook u otras redes -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Eliseo Veterinario | Atención veterinaria a domicilio">
+  <meta property="og:description" content="Más de 30 años de experiencia cuidando de mascotas en Mutxamel, Alicante y alrededores.">
+  <meta property="og:url" content="https://tudominio.es/">
+  <meta property="og:image" content="https://tudominio.es/assets/images/foto2.jpeg">
+  <meta property="og:locale" content="es_ES">
+
+  <meta name="theme-color" content="#1f5f8b">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Datos estructurados para mejorar el SEO local.
+       Cambia tudominio.es por el dominio final cuando publiques la web. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VeterinaryCare",
+    "name": "Eliseo Veterinario",
+    "description": "Veterinario a domicilio con más de 30 años de experiencia en Mutxamel, Alicante y alrededores.",
+    "url": "https://tudominio.es/",
+    "telephone": "+34619130515",
+    "image": "https://tudominio.es/assets/images/foto2.jpeg",
+    "priceRange": "€€",
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Mutxamel"
+      },
+      {
+        "@type": "City",
+        "name": "Alicante"
+      }
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+34619130515",
+      "contactType": "customer service",
+      "availableLanguage": "es"
+    }
+  }
+  </script>
 </head>
+
 <body>
 
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
 
-<!-- ===== CABECERA ===== -->
-<header class="header" id="header">
-  <div class="container header__inner">
-    <a href="#inicio" class="logo">Eliseo <span>Veterinario</span></a>
+  <!-- ===== CABECERA ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
 
-    <!-- Teléfono visible en cabecera: cámbialo aquí -->
-    <a href="tel:+34619130515" class="header__phone" aria-label="Llamar a Eliseo Veterinario">
-      📞 619 13 05 15
-    </a>
+      <a href="#inicio" class="logo" aria-label="Eliseo Veterinario, ir al inicio">
+        Eliseo <span>Veterinario</span>
+      </a>
 
-    <nav class="nav" id="nav">
-      <ul class="nav__list">
-        <li><a href="#inicio" class="nav__link">Inicio</a></li>
-        <li><a href="#servicios" class="nav__link">Servicios</a></li>
-        <li><a href="#sobre-mi" class="nav__link">Sobre mí</a></li>
-        <li><a href="#zona" class="nav__link">Zona de atención</a></li>
-        <li><a href="#contacto" class="nav__link">Contacto</a></li>
-      </ul>
-    </nav>
+      <!-- El teléfono se mantiene visible en todo momento en la cabecera -->
+      <a href="tel:+34619130515" class="header__phone" aria-label="Llamar a Eliseo Veterinario al 619 13 05 15">
+        <span aria-hidden="true">☎</span>
+        <span>619 13 05 15</span>
+      </a>
 
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link">Inicio</a></li>
+          <li><a href="#servicios" class="nav__link">Servicios</a></li>
+          <li><a href="#sobre-nosotros" class="nav__link">Sobre nosotros</a></li>
+          <li><a href="#zona" class="nav__link">Zona de atención</a></li>
+          <li><a href="#contacto" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
 
-    <!-- Botón WhatsApp destacado en cabecera: cambia el número y el texto aquí -->
-    <a href="https://wa.me/34619130515?text=Hola%20Eliseo%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20atenci%C3%B3n%20veterinaria%20a%20domicilio"
-       class="btn btn--whatsapp header__cta" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
-      Contactar por WhatsApp
-    </a>
+      <a
+        href="https://wa.me/34619130515?text=Hola%20Eliseo%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20atenci%C3%B3n%20veterinaria%20a%20domicilio."
+        class="btn btn--whatsapp header__cta"
+        target="_blank"
+        rel="noopener"
+      >
+        WhatsApp
+      </a>
 
+      <button
+        class="hamburger"
+        id="hamburger"
+        type="button"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+        aria-controls="nav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
 
-    <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
+  <main id="contenido">
 
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
 
-<main>
+        <div class="hero__text reveal">
+          <p class="hero__badge">
+            <span aria-hidden="true">🐾</span>
+            Veterinario a domicilio en Mutxamel, Alicante y alrededores
+          </p>
 
+          <h1>Atención veterinaria de confianza, directamente en tu hogar</h1>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero" id="inicio">
-    <div class="container hero__inner">
-      <div class="hero__text reveal">
-        <p class="hero__badge">🐾 Servicio veterinario a domicilio en Mutxamel, Alicante y alrededores</p>
-        <!-- Cambia el titular y subtítulo principal aquí -->
-        <h1>Atención veterinaria de confianza, directamente en tu hogar</h1>
-        <p class="hero__subtitle">Más de 30 años cuidando de la salud de tus mascotas con consultas y servicios veterinarios a domicilio en Mutxamel, Alicante y alrededores.</p>
-        <!-- Teléfono destacado en el inicio: cámbialo aquí -->
-        <p class="hero__phone">
-          📞 <a href="tel:+34619130515">619 13 05 15</a> — Mutxamel, Alicante y alrededores
+          <p class="hero__subtitle">
+            Más de 30 años cuidando de la salud de las mascotas con consultas,
+            vacunas y servicios veterinarios a domicilio.
+          </p>
+
+          <p class="hero__phone">
+            <span aria-hidden="true">☎</span>
+            Llámanos al <a href="tel:+34619130515">619 13 05 15</a>
+          </p>
+
+          <div class="hero__actions">
+            <a
+              href="https://wa.me/34619130515?text=Hola%20Eliseo%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20atenci%C3%B3n%20veterinaria%20a%20domicilio."
+              class="btn btn--whatsapp"
+              target="_blank"
+              rel="noopener"
+            >
+              <span aria-hidden="true">💬</span> Escribir por WhatsApp
+            </a>
+
+            <a href="tel:+34619130515" class="btn btn--outline">
+              <span aria-hidden="true">☎</span> Llamar ahora
+            </a>
+          </div>
+
+          <p class="hero__microcopy">
+            Contacto directo por WhatsApp o teléfono.
+          </p>
+        </div>
+
+        <div class="hero__image reveal">
+          <!-- Cambia esta foto por la imagen principal que prefieras -->
+          <img
+            src="assets/images/foto2.jpeg"
+            alt="Veterinario atendiendo a una mascota durante una visita a domicilio"
+            width="600"
+            height="700"
+            fetchpriority="high"
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== VENTAJAS ===== -->
+    <section class="ventajas" aria-label="Ventajas del servicio">
+      <div class="container">
+        <div class="ventajas__grid">
+
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true">⌛</span>
+            <h2>Más de 30 años de experiencia</h2>
+            <p>Trayectoria y conocimiento al servicio de la salud de las mascotas.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true">⌂</span>
+            <h2>Atención a domicilio</h2>
+            <p>Nos desplazamos hasta tu hogar para evitar viajes y esperas innecesarias.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true">♡</span>
+            <h2>Trato cercano</h2>
+            <p>Una atención tranquila, respetuosa y adaptada a cada mascota y familia.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true">⚡</span>
+            <h2>Servicio ágil</h2>
+            <p>Cuidados veterinarios esenciales de forma cómoda y a precios razonables.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICIOS ===== -->
+    <section class="servicios" id="servicios">
+      <div class="container">
+
+        <h2 class="section-title reveal">Servicios veterinarios a domicilio</h2>
+        <p class="section-subtitle reveal">
+          Cuidados esenciales para tu mascota, sin salir de casa.
         </p>
-        <div class="hero__actions">
-          <a href="https://wa.me/34619130515?text=Hola%20Eliseo%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20atenci%C3%B3n%20veterinaria%20a%20domicilio"
-             class="btn btn--whatsapp" target="_blank" rel="noopener">Escribir por WhatsApp</a>
-          <!-- Cambia el número de teléfono aquí -->
-          <a href="tel:+34619130515" class="btn btn--outline">Llamar ahora</a>
-        </div>
-      </div>
-      <div class="hero__image reveal">
-        <!-- Sustituye por la foto principal del veterinario o mascota -->
-        <img src="assets/images/foto2.jpeg" alt="Veterinario atendiendo a una mascota en su domicilio" width="600" height="700">
-      </div>
-    </div>
-  </section>
 
+        <div class="servicios__grid">
 
-  <!-- ===== VENTAJAS ===== -->
-  <section class="ventajas">
-    <div class="container">
-      <div class="ventajas__grid">
-        <article class="card reveal">
-          <span class="card__icon" aria-hidden="true">⏳</span>
-          <h3>+30 años de experiencia</h3>
-          <p>Trayectoria contrastada cuidando la salud de todo tipo de mascotas.</p>
-        </article>
-        <article class="card reveal">
-          <span class="card__icon" aria-hidden="true">🏠</span>
-          <h3>Atención a domicilio</h3>
-          <p>Nos desplazamos hasta tu casa para que tu mascota no sufra el estrés del transporte.</p>
-        </article>
-        <article class="card reveal">
-          <span class="card__icon" aria-hidden="true">💛</span>
-          <h3>Trato cercano</h3>
-          <p>Un servicio personalizado, tranquilo y adaptado a cada mascota y familia.</p>
-        </article>
-        <article class="card reveal">
-          <span class="card__icon" aria-hidden="true">⚡</span>
-          <h3>Rápido y accesible</h3>
-          <p>Servicios ágiles a precios razonables, sin desplazamientos ni esperas innecesarias.</p>
-        </article>
-      </div>
-    </div>
-  </section>
+          <article class="service-card reveal">
+            <span class="service-card__icon" aria-hidden="true">🩺</span>
+            <h3>Consultas a domicilio</h3>
+            <p>Revisiones y valoraciones veterinarias generales en la comodidad de tu hogar.</p>
+          </article>
 
+          <article class="service-card reveal">
+            <span class="service-card__icon" aria-hidden="true">💉</span>
+            <h3>Vacunación</h3>
+            <p>Aplicación de vacunas para ayudar a proteger la salud de tu mascota.</p>
+          </article>
 
-  <!-- ===== SERVICIOS ===== -->
-  <section class="servicios" id="servicios">
-    <div class="container">
-      <h2 class="section-title reveal">Servicios veterinarios a domicilio</h2>
-      <p class="section-subtitle reveal">Cuidados esenciales para tu mascota, en la comodidad de tu hogar.</p>
+          <article class="service-card reveal">
+            <span class="service-card__icon" aria-hidden="true">🏷</span>
+            <h3>Microchips</h3>
+            <p>Implantación de microchip de identificación para perros, gatos y otras mascotas.</p>
+          </article>
 
+          <article class="service-card reveal">
+            <span class="service-card__icon" aria-hidden="true">🛡</span>
+            <h3>Desparasitaciones</h3>
+            <p>Orientación y tratamientos antiparasitarios internos y externos adaptados a cada animal.</p>
+          </article>
 
-      <div class="servicios__grid">
-        <article class="service-card reveal">
-          <span class="service-card__icon" aria-hidden="true">🩺</span>
-          <h3>Consultas a domicilio</h3>
-          <p>Revisiones y valoraciones veterinarias generales sin salir de casa.</p>
-        </article>
-        <article class="service-card reveal">
-          <span class="service-card__icon" aria-hidden="true">💉</span>
-          <h3>Vacunación</h3>
-          <p>Pautas de vacunación aplicadas de forma cómoda y segura en tu hogar.</p>
-        </article>
-        <article class="service-card reveal">
-          <span class="service-card__icon" aria-hidden="true">🔖</span>
-          <h3>Microchips</h3>
-          <p>Implantación de microchip de identificación para tu mascota.</p>
-        </article>
-        <article class="service-card reveal">
-          <span class="service-card__icon" aria-hidden="true">🦠</span>
-          <h3>Desparasitaciones</h3>
-          <p>Tratamientos antiparasitarios internos y externos adaptados a cada animal.</p>
-        </article>
-        <article class="service-card reveal">
-          <span class="service-card__icon" aria-hidden="true">🩸</span>
-          <h3>Análisis de sangre</h3>
-          <p>Extracción de muestras para analíticas que ayudan a valorar el estado de salud.</p>
-        </article>
-        <article class="service-card reveal">
-          <span class="service-card__icon" aria-hidden="true">📋</span>
-          <h3>Revisiones y seguimiento</h3>
-          <p>Controles periódicos para hacer seguimiento de la evolución de tu mascota.</p>
-        </article>
-        <!-- Nuevo servicio: eutanasia a domicilio con incineración -->
-        <article class="service-card reveal">
-          <span class="service-card__icon" aria-hidden="true">🕊️</span>
-          <h3>Eutanasia a domicilio</h3>
-          <p>Servicio de eutanasia a domicilio con servicio de incineración, realizado con el máximo respeto y acompañamiento a la familia.</p>
-        </article>
-      </div>
+          <article class="service-card reveal">
+            <span class="service-card__icon" aria-hidden="true">🩸</span>
+            <h3>Análisis de sangre</h3>
+            <p>Extracción de muestras para analíticas y valoración del estado de salud.</p>
+          </article>
 
+          <article class="service-card reveal">
+            <span class="service-card__icon" aria-hidden="true">📋</span>
+            <h3>Revisiones y seguimiento</h3>
+            <p>Controles periódicos para acompañar la evolución y el bienestar de tu mascota.</p>
+          </article>
 
-      <div class="servicios__nota reveal">
-        <p>¿Necesitas otro servicio veterinario a domicilio? <a href="#contacto">Consúltanos sin compromiso</a>.</p>
-      </div>
-    </div>
-  </section>
+          <article class="service-card service-card--special reveal">
+            <span class="service-card__icon" aria-hidden="true">🕊</span>
+            <h3>Eutanasia a domicilio con servicio de incineración</h3>
+            <p>
+              Un servicio realizado con el máximo respeto, cuidado y acompañamiento
+              para la mascota y su familia en un momento delicado.
+            </p>
+          </article>
 
-
-  <!-- ===== SOBRE MÍ ===== -->
-  <section class="sobre-mi" id="sobre-mi">
-    <div class="container sobre-mi__inner">
-      <div class="sobre-mi__image reveal">
-        <!-- Sustituye por la foto de Eliseo o de su labor con mascotas -->
-        <img src="assets/images/eliseo.png" alt="Eliseo, veterinario a domicilio, con una mascota" loading="lazy" width="500" height="600">
-      </div>
-      <div class="sobre-mi__text reveal">
-        <h2 class="section-title">Sobre Eliseo</h2>
-        <!-- Texto editable sobre el profesional -->
-        <p>Con más de tres décadas de experiencia, Eliseo ofrece una atención veterinaria profesional, cercana y adaptada a las necesidades de cada mascota y familia.</p>
-        <p>Su servicio a domicilio permite realizar consultas y cuidados esenciales en un entorno más cómodo y tranquilo para el animal, evitando desplazamientos innecesarios.</p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ===== ¿POR QUÉ A DOMICILIO? ===== -->
-  <section class="domicilio">
-    <div class="container">
-      <h2 class="section-title reveal">¿Por qué elegir la atención a domicilio?</h2>
-      <div class="domicilio__grid">
-        <article class="card card--light reveal">
-          <span class="card__icon" aria-hidden="true">😌</span>
-          <h3>Menos estrés para la mascota</h3>
-          <p>Se evita el viaje y la espera en un entorno desconocido.</p>
-        </article>
-        <article class="card card--light reveal">
-          <span class="card__icon" aria-hidden="true">🛋️</span>
-          <h3>Mayor comodidad</h3>
-          <p>La consulta se adapta a los horarios y el hogar de la familia.</p>
-        </article>
-        <article class="card card--light reveal">
-          <span class="card__icon" aria-hidden="true">🤝</span>
-          <h3>Atención individualizada</h3>
-          <p>Tiempo y dedicación exclusivos para tu mascota, sin prisas.</p>
-        </article>
-        <article class="card card--light reveal">
-          <span class="card__icon" aria-hidden="true">🐾</span>
-          <h3>Ideal para casos especiales</h3>
-          <p>Perfecto para mascotas mayores, nerviosas o con movilidad reducida.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ===== ZONA DE ATENCIÓN ===== -->
-  <section class="zona" id="zona">
-    <div class="container zona__inner">
-      <div class="zona__text reveal">
-        <h2 class="section-title">Zona de atención</h2>
-        <p>Atendemos principalmente en <strong>Mutxamel, Alicante y zonas cercanas</strong>, desplazándonos hasta el domicilio de cada familia.</p>
-        <div class="zona__card">
-          <span aria-hidden="true">📍</span>
-          <!-- Dirección de referencia: edítala aquí -->
-          <p>C. Aries, 15, 03110 Mutxamel, Alicante<br><small>Dirección de referencia — la atención se realiza principalmente a domicilio.</small></p>
-        </div>
-      </div>
-      <div class="zona__mapa reveal">
-        <!-- Sustituye "src" por la URL real del mapa de Google Maps para tu zona -->
-        <iframe
-          title="Mapa zona de atención Mutxamel"
-          src="https://www.google.com/maps?q=C.%20Aries%2015%2C%2003110%20Mutxamel%2C%20Alicante&output=embed"
-          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ===== GALERÍA ===== -->
-  <section class="galeria">
-    <div class="container">
-      <h2 class="section-title reveal">Galería</h2>
-      <p class="section-subtitle reveal"></p>
-
-
-      <div class="galeria__grid" id="galeria-grid">
-        <!-- Sustituye cada imagen por tus propias fotos, mantén los alt descriptivos -->
-        <img src="assets/images/foto1.jpeg" alt="Perro atendido durante una visita veterinaria a domicilio" loading="lazy">
-        <img src="assets/images/foto5.jpeg" alt="Gato en revisión veterinaria en su hogar" loading="lazy">
-        <img src="assets/images/foto2.jpeg" alt="Perro y gato conviviendo tranquilamente en casa" loading="lazy">
-        <img src="assets/images/foto3.jpeg" alt="Gato descansando al sol en el jardín" loading="lazy">
-        <img src="assets/images/foto4.jpeg" alt="Perro y gato juntos en el patio" loading="lazy">
-        <img src="assets/images/foto6.jpeg" alt="Perro disfrutando de un paseo al aire libre" loading="lazy">
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Lightbox / modal de galería -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
-    <button class="lightbox__close" id="lightbox-close" aria-label="Cerrar imagen">✕</button>
-    <img src="" alt="" id="lightbox-img">
-  </div>
-
-
-  <!-- ===== CONTACTO ===== -->
-  <section class="contacto" id="contacto">
-    <div class="container">
-      <h2 class="section-title reveal">Contacta con Eliseo</h2>
-      <p class="section-subtitle reveal">Escríbenos por WhatsApp o llama directamente, estaremos encantados de ayudarte.</p>
-
-
-      <div class="contacto__grid">
-        <div class="contacto__acciones reveal">
-          <a href="https://wa.me/34619130515?text=Hola%20Eliseo%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20atenci%C3%B3n%20veterinaria%20a%20domicilio"
-             class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener">💬 Escribir por WhatsApp</a>
-          <a href="tel:+34619130515" class="btn btn--outline btn--lg">📞 Llamar: 619 13 05 15</a>
         </div>
 
-
-        <!-- Formulario visual sin backend: no envía datos reales -->
-        <form class="contacto__form reveal" id="contact-form" novalidate>
-          <div class="form-group">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" required aria-required="true">
-          </div>
-          <div class="form-group">
-            <label for="telefono">Teléfono</label>
-            <input type="tel" id="telefono" name="telefono" required aria-required="true">
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required aria-required="true">
-          </div>
-          <div class="form-group">
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required aria-required="true"></textarea>
-          </div>
-          <button type="submit" class="btn btn--primary">Enviar consulta</button>
-          <p class="form-note" id="form-note" role="status" aria-live="polite"></p>
-        </form>
+        <div class="servicios__nota reveal">
+          <p>
+            ¿Necesitas otro servicio veterinario a domicilio?
+            <a href="#contacto">Consúltanos sin compromiso.</a>
+          </p>
+        </div>
       </div>
+    </section>
+
+    <!-- ===== SOBRE NOSOTROS ===== -->
+    <section class="sobre-mi" id="sobre-nosotros">
+      <div class="container sobre-mi__inner">
+
+        <div class="sobre-mi__image reveal">
+          <!-- Sustituye esta imagen por una foto de Eliseo si lo deseas -->
+          <img
+            src="assets/images/eliseo2.png"
+            alt="Eliseo durante una atención veterinaria a domicilio"
+            loading="lazy"
+            width="500"
+            height="600"
+          >
+        </div>
+
+        <div class="sobre-mi__text reveal">
+          <p class="eyebrow">Experiencia y cercanía</p>
+          <h2 class="section-title section-title--left">Sobre Eliseo Veterinario</h2>
+          <p>
+            Con más de tres décadas de experiencia, ofrecemos una atención veterinaria
+            profesional, cercana y adaptada a las necesidades de cada mascota y familia.
+          </p>
+          <p>
+            El servicio a domicilio permite realizar consultas y cuidados esenciales en
+            un entorno más cómodo y tranquilo para el animal, evitando desplazamientos innecesarios.
+          </p>
+          <a href="#contacto" class="text-link">Contactar con nosotros <span aria-hidden="true">→</span></a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== ATENCIÓN A DOMICILIO ===== -->
+    <section class="domicilio">
+      <div class="container">
+
+        <h2 class="section-title reveal">¿Por qué elegir la atención a domicilio?</h2>
+        <p class="section-subtitle reveal">
+          Una alternativa cómoda para las familias y más tranquila para muchas mascotas.
+        </p>
+
+        <div class="domicilio__grid">
+
+          <article class="card card--light reveal">
+            <span class="card__icon" aria-hidden="true">☺</span>
+            <h3>Menos estrés</h3>
+            <p>Se evita el viaje y la espera en un entorno que puede resultar desconocido.</p>
+          </article>
+
+          <article class="card card--light reveal">
+            <span class="card__icon" aria-hidden="true">⌂</span>
+            <h3>Mayor comodidad</h3>
+            <p>La visita se realiza en casa, sin necesidad de transportar a la mascota.</p>
+          </article>
+
+          <article class="card card--light reveal">
+            <span class="card__icon" aria-hidden="true">🤝</span>
+            <h3>Atención personalizada</h3>
+            <p>Un trato cercano y adaptado a las circunstancias de cada familia.</p>
+          </article>
+
+          <article class="card card--light reveal">
+            <span class="card__icon" aria-hidden="true">🐾</span>
+            <h3>Ideal para casos especiales</h3>
+            <p>Especialmente útil para mascotas mayores, nerviosas o con movilidad reducida.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ZONA ===== -->
+    <section class="zona" id="zona">
+      <div class="container zona__inner">
+
+        <div class="zona__text reveal">
+          <p class="eyebrow">Servicio a domicilio</p>
+          <h2 class="section-title section-title--left">Zona de atención</h2>
+
+          <p>
+            Ofrecemos atención veterinaria a domicilio principalmente en
+            <strong>Mutxamel, Alicante y alrededores</strong>.
+          </p>
+
+          <div class="zona__card">
+            <span aria-hidden="true">📍</span>
+            <div>
+              <h3>Mutxamel, Alicante y zonas cercanas</h3>
+              <p>
+                Contacta con nosotros para confirmar la disponibilidad del servicio
+                en tu domicilio.
+              </p>
+            </div>
+          </div>
+
+          <a
+            href="https://wa.me/34619130515?text=Hola%20Eliseo%2C%20quer%C3%ADa%20consultar%20si%20ofrec%C3%A9is%20atenci%C3%B3n%20veterinaria%20a%20domicilio%20en%20mi%20zona."
+            class="btn btn--primary"
+            target="_blank"
+            rel="noopener"
+          >
+            Consultar disponibilidad
+          </a>
+        </div>
+
+        <div class="zona__mapa reveal">
+          <iframe
+            title="Mapa de la zona de atención en Mutxamel y Alicante"
+            src="https://www.google.com/maps?q=Mutxamel%2C%20Alicante&output=embed"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== GALERÍA ===== -->
+    <section class="galeria" aria-labelledby="galeria-title">
+      <div class="container">
+
+        <h2 class="section-title reveal" id="galeria-title">Galería</h2>
+        <p class="section-subtitle reveal">
+          Algunas imágenes de nuestro trabajo y de las mascotas que cuidamos.
+        </p>
+
+        <div class="galeria__grid" id="galeria-grid">
+
+          <button class="gallery-item" type="button" aria-label="Ampliar imagen de perro durante una visita veterinaria">
+            <img src="assets/images/foto1.jpeg" alt="Perro atendido durante una visita veterinaria a domicilio" loading="lazy" width="600" height="450">
+          </button>
+
+          <button class="gallery-item" type="button" aria-label="Ampliar imagen de gato en casa">
+            <img src="assets/images/foto5.jpeg" alt="Gato en su hogar durante una revisión veterinaria" loading="lazy" width="600" height="450">
+          </button>
+
+          <button class="gallery-item" type="button" aria-label="Ampliar imagen de perro y gato">
+            <img src="assets/images/foto2.jpeg" alt="Perro y gato tranquilos en casa" loading="lazy" width="600" height="450">
+          </button>
+
+          <button class="gallery-item" type="button" aria-label="Ampliar imagen de gato en jardín">
+            <img src="assets/images/foto3.jpeg" alt="Gato descansando al sol en un jardín" loading="lazy" width="600" height="450">
+          </button>
+
+          <button class="gallery-item" type="button" aria-label="Ampliar imagen de perro y gato juntos">
+            <img src="assets/images/foto4.jpeg" alt="Perro y gato juntos en un patio" loading="lazy" width="600" height="450">
+          </button>
+
+          <button class="gallery-item" type="button" aria-label="Ampliar imagen de perro al aire libre">
+            <img src="assets/images/foto6.jpeg" alt="Perro disfrutando de un paseo al aire libre" loading="lazy" width="600" height="450">
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LIGHTBOX ===== -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada" aria-hidden="true">
+      <button class="lightbox__close" id="lightbox-close" type="button" aria-label="Cerrar imagen ampliada">
+        <span aria-hidden="true">×</span>
+      </button>
+      <img src="" alt="" id="lightbox-img">
     </div>
-  </section>
 
+    <!-- ===== CONTACTO ===== -->
+    <section class="contacto" id="contacto">
+      <div class="container">
 
-</main>
+        <h2 class="section-title reveal">Contacta con Eliseo</h2>
+        <p class="section-subtitle reveal">
+          Llámanos o escríbenos por WhatsApp para consultar cualquier servicio.
+        </p>
 
+        <div class="contacto__grid">
 
-<!-- ===== PIE DE PÁGINA ===== -->
-<footer class="footer">
-  <div class="container footer__inner">
-    <div class="footer__brand">
-      <p class="logo logo--footer">Eliseo <span>Veterinario</span></p>
-      <p>Veterinario a domicilio en Mutxamel y Alicante.</p>
-      <a href="tel:+34619130515">📞 619 13 05 15</a>
-      <a href="https://wa.me/34619130515?text=Hola%20Eliseo%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20atenci%C3%B3n%20veterinaria%20a%20domicilio" target="_blank" rel="noopener">💬 WhatsApp</a>
+          <div class="contacto__acciones reveal">
+            <div class="contacto__phone-box">
+              <span aria-hidden="true">☎</span>
+              <div>
+                <p>Teléfono de contacto</p>
+                <a href="tel:+34619130515">619 13 05 15</a>
+              </div>
+            </div>
+
+            <a
+              href="https://wa.me/34619130515?text=Hola%20Eliseo%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20atenci%C3%B3n%20veterinaria%20a%20domicilio."
+              class="btn btn--whatsapp btn--lg"
+              target="_blank"
+              rel="noopener"
+            >
+              <span aria-hidden="true">💬</span> Escribir por WhatsApp
+            </a>
+
+            <a href="tel:+34619130515" class="btn btn--outline btn--lg">
+              <span aria-hidden="true">☎</span> Llamar ahora
+            </a>
+
+            <p class="contacto__note">
+              Atendemos en Mutxamel, Alicante y alrededores.
+            </p>
+          </div>
+
+          <!-- Formulario preparado para conectarlo en el futuro -->
+          <form class="contacto__form reveal" id="contact-form">
+            <h3>Envíanos tu consulta</h3>
+            <p class="form-intro">También podrás contactar mediante este formulario próximamente.</p>
+
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" autocomplete="tel" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary">Enviar consulta</button>
+
+            <p class="form-note" id="form-note" role="status" aria-live="polite"></p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <p class="logo logo--footer">Eliseo <span>Veterinario</span></p>
+        <p>Veterinario a domicilio en Mutxamel, Alicante y alrededores.</p>
+        <a href="tel:+34619130515">☎ 619 13 05 15</a>
+        <a
+          href="https://wa.me/34619130515?text=Hola%20Eliseo%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20atenci%C3%B3n%20veterinaria%20a%20domicilio."
+          target="_blank"
+          rel="noopener"
+        >
+          💬 WhatsApp
+        </a>
+      </div>
+
+      <!-- Crea estas páginas antes de publicar la web -->
+      <div class="footer__legal">
+        <a href="aviso-legal.html">Aviso legal</a>
+        <a href="politica-privacidad.html">Política de privacidad</a>
+        <a href="politica-cookies.html">Política de cookies</a>
+      </div>
+
     </div>
-    <div class="footer__legal">
-      <!-- Enlaces de ejemplo: sustituir por páginas reales cuando existan -->
-      <a href="#">Aviso legal</a>
-      <a href="#">Política de privacidad</a>
-      <a href="#">Política de cookies</a>
-    </div>
-  </div>
-  <p class="footer__copy">© <span id="year"></span> Eliseo Veterinario. Todos los derechos reservados.</p>
-</footer>
 
+    <p class="footer__copy">
+      © <span id="year"></span> Eliseo Veterinario. Todos los derechos reservados.
+    </p>
+  </footer>
 
-<!-- ===== BOTÓN FLOTANTE WHATSAPP ===== -->
-<a href="https://wa.me/34619130515?text=Hola%20Eliseo%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20atenci%C3%B3n%20veterinaria%20a%20domicilio"
-   class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
-  💬
-</a>
+  <!-- ===== WHATSAPP FLOTANTE ===== -->
+  <a
+    href="https://wa.me/34619130515?text=Hola%20Eliseo%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20atenci%C3%B3n%20veterinaria%20a%20domicilio."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener"
+    aria-label="Contactar por WhatsApp con Eliseo Veterinario"
+  >
+    <span aria-hidden="true">💬</span>
+    <span class="whatsapp-float__text">WhatsApp</span>
+  </a>
 
-
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
